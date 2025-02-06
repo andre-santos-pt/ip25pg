@@ -1,0 +1,34 @@
+{
+  "module" : "m1",
+  "exercises" : [ {
+    "exercise" : "previous",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyParams", "pt.iscte.pesca.questions.WhatIsResult" ]
+  }, {
+    "exercise" : "doubleOf",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichParametersSingleChoice" ]
+  }, {
+    "exercise" : "difference",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyParams" ]
+  }, {
+    "exercise" : "average",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichReturnType" ]
+  }, {
+    "exercise" : "averageInt",
+    "qlc" : [ "pt.iscte.pesca.questions.WhatIsResult" ]
+  }, {
+    "exercise" : "round",
+    "qlc" : [ "pt.iscte.pesca.questions.WhatIsResult", "pt.iscte.pesca.questions.fixed.WhichParameterTypes" ]
+  }, {
+    "exercise" : "isNegative",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichReturnType" ]
+  }, {
+    "exercise" : "inOrder",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyParams" ]
+  }, {
+    "exercise" : "isExcluded",
+    "qlc" : [ "pt.iscte.pesca.questions.WhatIsResult" ]
+  }, {
+    "exercise" : "staticModule",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyParams", "pt.iscte.pesca.questions.WhichReturnType", "pt.iscte.pesca.questions.WhichParametersMultipleChoice" ]
+  } ]
+}

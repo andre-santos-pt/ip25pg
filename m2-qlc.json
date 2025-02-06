@@ -1,0 +1,43 @@
+{
+  "module" : "m2",
+  "exercises" : [ {
+    "exercise" : "abs",
+    "qlc" : [ "pt.iscte.pesca.questions.dynamic.WhichReturnExecuted" ]
+  }, {
+    "exercise" : "max",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichParametersSingleChoice" ]
+  }, {
+    "exercise" : "min",
+    "qlc" : [ "pt.iscte.pesca.questions.dynamic.WhichReturnExecuted" ]
+  }, {
+    "exercise" : "irsGroup",
+    "qlc" : [ "pt.iscte.pesca.questions.WhatIsResult" ]
+  }, {
+    "exercise" : "irsTax",
+    "qlc" : [ "pt.iscte.pesca.questions.dynamic.WhichReturnExecuted" ]
+  }, {
+    "exercise" : "varAssign",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichVariableValues" ]
+  }, {
+    "exercise" : "firstDigit",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichVariableValues", "pt.iscte.pesca.questions.HowManyLoopIterations" ]
+  }, {
+    "exercise" : "naturalsIterator",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichVariableValues", "pt.iscte.pesca.questions.HowManyLoopIterations" ]
+  }, {
+    "exercise" : "sumNaturals",
+    "qlc" : [ "pt.iscte.pesca.questions.WhatVariables", "pt.iscte.pesca.questions.WhichVariableHoldsReturn" ]
+  }, {
+    "exercise" : "isMultiple",
+    "qlc" : [ "pt.iscte.pesca.questions.WhatIsResult", "pt.iscte.pesca.questions.HowManyVariableAssignments" ]
+  }, {
+    "exercise" : "reverseIteration",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichVariableValues" ]
+  }, {
+    "exercise" : "powerOfTwo",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyVariables" ]
+  }, {
+    "exercise" : "sumEvenBetween",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichParametersMultipleChoice" ]
+  } ]
+}

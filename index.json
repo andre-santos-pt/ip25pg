@@ -1,0 +1,28 @@
+{
+  "id" : "ip25pg",
+  "modules" : [ {
+    "id" : "m1",
+    "visible" : true,
+    "requires" : [ ]
+  }, {
+    "id" : "m2",
+    "visible" : false,
+    "requires" : [ "m1" ]
+  }, {
+    "id" : "m3",
+    "visible" : false,
+    "requires" : [ "m2" ]
+  }, {
+    "id" : "m4",
+    "visible" : false,
+    "requires" : [ "m3" ]
+  }, {
+    "id" : "m5",
+    "visible" : false,
+    "requires" : [ "m4", "m3" ]
+  }, {
+    "id" : "m6",
+    "visible" : false,
+    "requires" : [ "m5" ]
+  } ]
+}
