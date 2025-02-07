@@ -1,0 +1,22 @@
+{
+  "module" : "m3",
+  "exercises" : [ {
+    "exercise" : "oddIsNotEven",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyFunctionCalls" ]
+  }, {
+    "exercise" : "randomInts",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyParams", "pt.iscte.pesca.questions.WhichReturnType" ]
+  }, {
+    "exercise" : "isPerfectSquare",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyFunctionDependencies", "pt.iscte.pesca.questions.CallsOtherFunctions" ]
+  }, {
+    "exercise" : "divisorsModule",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyFunctionDependencies", "pt.iscte.pesca.questions.HowManyLoopIterations" ]
+  }, {
+    "exercise" : "primeNumbers",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichFunctionDependencies" ]
+  }, {
+    "exercise" : "perfectNumbers",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichVariableValues", "pt.iscte.pesca.questions.HowManyLoopIterations", "pt.iscte.pesca.questions.HowManyFunctionCalls" ]
+  } ]
+}
