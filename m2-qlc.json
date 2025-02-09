@@ -2,34 +2,46 @@
   "module" : "m2",
   "exercises" : [ {
     "exercise" : "abs",
-    "qlc" : [ "pt.iscte.pesca.questions.dynamic.WhichReturnExecuted" ]
+    "qlc" : [ "pt.iscte.pesca.questions.WhichReturnExecuted" ]
   }, {
     "exercise" : "max",
     "qlc" : [ "pt.iscte.pesca.questions.WhichParametersSingleChoice" ]
   }, {
     "exercise" : "min",
-    "qlc" : [ "pt.iscte.pesca.questions.dynamic.WhichReturnExecuted" ]
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyParams" ]
   }, {
     "exercise" : "irsGroup",
     "qlc" : [ "pt.iscte.pesca.questions.WhatIsResult" ]
   }, {
     "exercise" : "irsTax",
-    "qlc" : [ "pt.iscte.pesca.questions.dynamic.WhichReturnExecuted" ]
+    "qlc" : [ "pt.iscte.pesca.questions.WhichReturnExecuted" ]
+  }, {
+    "exercise" : "irsModule",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichParameterTypes" ]
   }, {
     "exercise" : "varAssign",
     "qlc" : [ "pt.iscte.pesca.questions.WhichVariableValues" ]
   }, {
+    "exercise" : "varAssignDiv",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyVariableAssignments" ]
+  }, {
     "exercise" : "firstDigit",
-    "qlc" : [ "pt.iscte.pesca.questions.WhichVariableValues", "pt.iscte.pesca.questions.HowManyLoopIterations" ]
+    "qlc" : [ "pt.iscte.pesca.questions.WhatVariables" ]
   }, {
     "exercise" : "naturalsIterator",
-    "qlc" : [ "pt.iscte.pesca.questions.WhichVariableValues", "pt.iscte.pesca.questions.HowManyLoopIterations" ]
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyLoopIterations" ]
   }, {
     "exercise" : "sumNaturals",
-    "qlc" : [ "pt.iscte.pesca.questions.WhatVariables", "pt.iscte.pesca.questions.WhichVariableHoldsReturn" ]
+    "qlc" : [ "pt.iscte.pesca.questions.WhatVariables" ]
   }, {
     "exercise" : "isMultiple",
-    "qlc" : [ "pt.iscte.pesca.questions.WhatIsResult", "pt.iscte.pesca.questions.HowManyVariableAssignments" ]
+    "qlc" : [ "pt.iscte.pesca.questions.WhichReturnType" ]
+  }, {
+    "exercise" : "intDivision",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichVariableHoldsReturn" ]
+  }, {
+    "exercise" : "iterationStepTwo",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyVariableAssignments" ]
   }, {
     "exercise" : "reverseIteration",
     "qlc" : [ "pt.iscte.pesca.questions.WhichVariableValues" ]
@@ -38,6 +50,12 @@
     "qlc" : [ "pt.iscte.pesca.questions.HowManyVariables" ]
   }, {
     "exercise" : "sumEvenBetween",
-    "qlc" : [ "pt.iscte.pesca.questions.WhichParametersMultipleChoice" ]
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyLoopIterations" ]
+  }, {
+    "exercise" : "invertInt",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichVariableHoldsReturn" ]
+  }, {
+    "exercise" : "fibonacci",
+    "qlc" : [ "pt.iscte.pesca.questions.HowManyVariables" ]
   } ]
 }
