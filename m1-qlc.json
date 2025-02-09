@@ -28,10 +28,10 @@
     "exercise" : "inOrder",
     "qlc" : [ "pt.iscte.pesca.questions.WhichParametersSingleChoice" ]
   }, {
+    "exercise" : "isIncluded",
+    "qlc" : [ "pt.iscte.pesca.questions.WhichParametersMultipleChoice" ]
+  }, {
     "exercise" : "isExcluded",
     "qlc" : [ "pt.iscte.pesca.questions.WhichParameterTypes" ]
-  }, {
-    "exercise" : "staticModule",
-    "qlc" : [ "pt.iscte.pesca.questions.WhichParametersMultipleChoice" ]
   } ]
 }
