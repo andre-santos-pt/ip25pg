@@ -6,7 +6,7 @@
     "requires" : [ ]
   }, {
     "id" : "m2",
-    "visible" : false,
+    "visible" : true,
     "requires" : [ "m1" ]
   }, {
     "id" : "m3",
