@@ -74,9 +74,168 @@
       "needsListener" : true
     } ]
   }, {
+    "id" : "flipCoin",
+    "type" : "JFUNCTION",
+    "description" : "<div>Escreva uma função para sortear entre dois valores inteiros.<br>Utilize a função <code>random</code> do módulo <code>Math</code>, que devolve um número aleatório no intervalo [0.0, 1.0[.</div>\n<div><em>Exemplos:</em>\n  <ul>\n    <li>Math.<a href=\"#\" class=\"example\" invocation=\"Math.random()\"'>random</a>() &rarr; 0.23</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"flipCoin(4, 7)\"'>flipCoin</a>(4, 7) &rarr; 4</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"flipCoin(4, 7)\"'>flipCoin</a>(4, 7) &rarr; 7</li>\n  </ul>\n</div>\n",
+    "required" : true,
+    "startCode" : "int flipCoin(int a, int b) {\n   \n}",
+    "solutions" : [ "int flipCoin(int a, int b) {\n    return Math.random() < 0.5 ? a : b;\n}" ],
+    "freezeTop" : 1,
+    "freezeBottom" : 1,
+    "exclude" : [ ],
+    "include" : [ ],
+    "importCode" : null,
+    "importExercises" : [ ],
+    "tests" : [ {
+      "name" : "flipCoin",
+      "args" : [ 4, 7 ],
+      "expected" : {
+        "type" : "alternativecheck",
+        "alternatives" : [ 4, 7 ]
+      },
+      "sideEffects" : null,
+      "repeat" : 5,
+      "traceVars" : [ ],
+      "traceCalls" : [ ],
+      "checkVars" : [ ],
+      "needsListener" : false
+    } ]
+  }, {
+    "id" : "isBetween",
+    "type" : "JFUNCTION",
+    "description" : "<div>Escreva uma função para verificar se um número está entre dois valores dados (exclusivé),\ntendo em conta que não estão necessariamente por ordem crescente.<br>Utilize as funções <code>min</code> e <code>max</code> do módulo <code>Math</code> para determinar o menor e o maior valor.</div>\n<div><em>Exemplos:</em>\n  <ul>\n    <li><a href=\"#\" class=\"example\" invocation=\"isBetween(5, 4, 7)\"'>isBetween</a>(5, 4, 7) &rarr; true</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"isBetween(4, 4, 7)\"'>isBetween</a>(4, 4, 7) &rarr; false</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"isBetween(5, 5, 1)\"'>isBetween</a>(5, 5, 1) &rarr; false</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"isBetween(4, 6, 3)\"'>isBetween</a>(4, 6, 3) &rarr; true</li>\n  </ul>\n</div>\n",
+    "required" : true,
+    "startCode" : null,
+    "solutions" : [ "boolean isBetween(int n, int a, int b) {\n    int min = Math.min(a, b);\n    int max = Math.max(a, b);\n    return n > min && n < max;\n}" ],
+    "freezeTop" : 0,
+    "freezeBottom" : 0,
+    "exclude" : [ ],
+    "include" : [ ],
+    "importCode" : null,
+    "importExercises" : [ ],
+    "tests" : [ {
+      "name" : "isBetween",
+      "args" : [ 5, 1, 9 ],
+      "expected" : {
+        "type" : "result",
+        "value" : true
+      },
+      "sideEffects" : null,
+      "repeat" : 1,
+      "traceVars" : [ ],
+      "traceCalls" : [ ],
+      "checkVars" : [ ],
+      "needsListener" : false
+    }, {
+      "name" : "isBetween",
+      "args" : [ 2, 2, 7 ],
+      "expected" : {
+        "type" : "result",
+        "value" : false
+      },
+      "sideEffects" : null,
+      "repeat" : 1,
+      "traceVars" : [ ],
+      "traceCalls" : [ ],
+      "checkVars" : [ ],
+      "needsListener" : false
+    }, {
+      "name" : "isBetween",
+      "args" : [ 5, 5, 1 ],
+      "expected" : {
+        "type" : "result",
+        "value" : false
+      },
+      "sideEffects" : null,
+      "repeat" : 1,
+      "traceVars" : [ ],
+      "traceCalls" : [ ],
+      "checkVars" : [ ],
+      "needsListener" : false
+    }, {
+      "name" : "isBetween",
+      "args" : [ 4, 7, 1 ],
+      "expected" : {
+        "type" : "result",
+        "value" : true
+      },
+      "sideEffects" : null,
+      "repeat" : 1,
+      "traceVars" : [ ],
+      "traceCalls" : [ ],
+      "checkVars" : [ ],
+      "needsListener" : false
+    } ]
+  }, {
+    "id" : "gradeRound",
+    "type" : "JFUNCTION",
+    "description" : "<div>Escreva uma função para converter uma nota de 0 a 100 para a escala 0 a 20.\nApós fazer a conversão proporcional, arredonde o valor resultante por excesso/defeito,\nutilizando a função <code>round</code> desenvolvida anteriormente.</div>\n<div><em>Exemplos:</em>\n  <ul>\n    <li><a href=\"#\" class=\"example\" invocation=\"gradeRound(50)\"'>gradeRound</a>(50) &rarr; 10</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"gradeRound(49)\"'>gradeRound</a>(49) &rarr; 10</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"gradeRound(94)\"'>gradeRound</a>(94) &rarr; 19</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"gradeRound(100)\"'>gradeRound</a>(100) &rarr; 20</li>\n  </ul>\n</div>\n",
+    "required" : true,
+    "startCode" : null,
+    "solutions" : [ "int gradeRound(int grade) {\n    double result = grade / 5.0;\n    return (int) Math.round(result);\n}" ],
+    "freezeTop" : 0,
+    "freezeBottom" : 0,
+    "exclude" : [ ],
+    "include" : [ ],
+    "importCode" : null,
+    "importExercises" : [ ],
+    "tests" : [ {
+      "name" : "gradeRound",
+      "args" : [ 45 ],
+      "expected" : {
+        "type" : "result",
+        "value" : 9
+      },
+      "sideEffects" : null,
+      "repeat" : 1,
+      "traceVars" : [ ],
+      "traceCalls" : [ ],
+      "checkVars" : [ ],
+      "needsListener" : false
+    }, {
+      "name" : "gradeRound",
+      "args" : [ 46 ],
+      "expected" : {
+        "type" : "result",
+        "value" : 9
+      },
+      "sideEffects" : null,
+      "repeat" : 1,
+      "traceVars" : [ ],
+      "traceCalls" : [ ],
+      "checkVars" : [ ],
+      "needsListener" : false
+    }, {
+      "name" : "gradeRound",
+      "args" : [ 63 ],
+      "expected" : {
+        "type" : "result",
+        "value" : 13
+      },
+      "sideEffects" : null,
+      "repeat" : 1,
+      "traceVars" : [ ],
+      "traceCalls" : [ ],
+      "checkVars" : [ ],
+      "needsListener" : false
+    }, {
+      "name" : "gradeRound",
+      "args" : [ 68 ],
+      "expected" : {
+        "type" : "result",
+        "value" : 14
+      },
+      "sideEffects" : null,
+      "repeat" : 1,
+      "traceVars" : [ ],
+      "traceCalls" : [ ],
+      "checkVars" : [ ],
+      "needsListener" : false
+    } ]
+  }, {
     "id" : "randomInts",
     "type" : "JCLASS",
-    "description" : "<div>A seguinte função gera um número inteiro aleatório no intervalo [0, 1000000[,\nutilizando a função <code>random</code> do módulo <code>Math</code> (a qual devolve um número aleatório no intervalo [0.0, 1.0[).<br>Escreva duas funções para gerar números aleatórios:<br><code>randomUntil</code>: fornece um número entre zero e menor que um número máximo dado no parâmetro<br><code>randomWithin</code>: fornece um número entre um mínimo e um máximo (intervalo fechado) dados nos parâmetros</div>\n<div><em>Exemplos:</em>\n  <ul>\n    <li><a href=\"#\" class=\"example\" invocation=\"randomUntil(10)\"'>randomUntil</a>(10) &rarr; 9</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"randomWithin(0, 5)\"'>randomWithin</a>(0, 5) &rarr; 2</li>\n  </ul>\n</div>\n",
+    "description" : "<div>A seguinte função gera um número inteiro aleatório no intervalo [0, 1000000[,\nutilizando a função <code>random</code> do módulo <code>Math.</code><br>Escreva duas funções para gerar números aleatórios:<br><code>randomUntil</code>: fornece um número entre zero e menor que um número máximo dado no parâmetro<br><code>randomWithin</code>: fornece um número entre um mínimo e um máximo (intervalo fechado) dados nos parâmetros</div>\n<div><em>Exemplos:</em>\n  <ul>\n    <li><a href=\"#\" class=\"example\" invocation=\"randomUntil(10)\"'>randomUntil</a>(10) &rarr; 9</li>\n    <li><a href=\"#\" class=\"example\" invocation=\"randomWithin(0, 5)\"'>randomWithin</a>(0, 5) &rarr; 2</li>\n  </ul>\n</div>\n",
     "required" : true,
     "startCode" : "class RandomInts {\n    static int random() {\n        return (int) (Math.random() * 1000000);\n    }\n\n    static int randomUntil(int max) {\n        return 0; // TODO\n    }\n\n    static int randomWithin(int min, int max) {\n        return 0; // TODO\n    }\n}",
     "solutions" : [ "class RandomInts {\n    static int random() {\n        return (int) (Math.random() * 1000000);\n    }\n\n    static int randomUntil(int max) {\n        assert max > 0;\n        return (int) (Math.random() * max);\n    }\n\n    static int randomWithin(int min, int max) {\n        assert min < max;\n        return min + randomUntil(max - min + 1);\n    }\n}" ],
