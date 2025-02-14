@@ -10,7 +10,7 @@
     "requires" : [ "m1" ]
   }, {
     "id" : "m3",
-    "visible" : false,
+    "visible" : true,
     "requires" : [ "m2" ]
   }, {
     "id" : "m4",
